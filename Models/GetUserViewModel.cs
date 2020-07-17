@@ -12,6 +12,7 @@ namespace gitsearch_aspnetapp.Models
 	{
 		public JObject User { get; set; }
 		public string Error { get; set; }
+		public string StatusCode { get; set; }
 		public class info {}
 		public static async Task<dynamic> GetUserInfo(string user)
 		{
@@ -27,20 +28,21 @@ namespace gitsearch_aspnetapp.Models
 				string ResContent = Res.Content.ReadAsStringAsync().Result;
 				JObject UserInfo = JObject.Parse(ResContent);
 				try { Console.WriteLine(UserInfo["login"].ToString() != ""); return new GetUserViewModel(UserInfo); }
-				catch { return new GetUserViewModel(UserInfo["message"].ToString()); }
+				catch { return new GetUserViewModel(UserInfo["message"].ToString(), ((int) Res.StatusCode).ToString()); }
 			}
 			catch
 			{
-				return new GetUserViewModel("Not found");
+				return new GetUserViewModel("Not found", "404");
 			}
 		}	
 		private GetUserViewModel(JObject User)
 		{
 			this.User = User;
 		}
-		private GetUserViewModel(string Error)
+		private GetUserViewModel(string Error, string StatusCode)
 		{
 			this.Error = Error;
+			this.StatusCode = StatusCode;
 		}
 	}
 }

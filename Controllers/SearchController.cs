@@ -9,11 +9,11 @@ using gitsearch_aspnetapp.Models;
 
 namespace gitsearch_aspnetapp.Controllers
 {
-    public class HomeController : Controller
+    public class SearchController : Controller
     {
-        private readonly ILogger<HomeController> Logger;
+        private readonly ILogger<SearchController> Logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public SearchController(ILogger<SearchController> logger)
         {
             Logger = logger;
         }

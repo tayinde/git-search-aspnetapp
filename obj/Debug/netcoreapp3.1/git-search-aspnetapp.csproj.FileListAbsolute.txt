@@ -8,8 +8,6 @@
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/git-search-aspnetapp.TagHelpers.input.cache
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/git-search-aspnetapp.TagHelpers.output.cache
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/git-search-aspnetapp.RazorCoreGenerate.cache
-/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Home/GetUser.cshtml.g.cs
-/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
@@ -36,4 +34,6 @@
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/staticwebassets/git-search-aspnetapp.StaticWebAssets.Manifest.cache
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/staticwebassets/git-search-aspnetapp.StaticWebAssets.xml
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/git-search-aspnetapp.genruntimeconfig.cache
-/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Purpose.cshtml.g.cs
+/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/GetUser.cshtml.g.cs
+/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Index.cshtml.g.cs
+/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Purpose.cshtml.g.cs

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "k50NiDDr75/J4D4iLdZXiwThtgzWzEfwVF14hlXW5eL/0nbKvWsOBFQC9HYJVcofNlgqjZKqoF2dnj/DTAB70Q==",
+  "success": true,
+  "projectFilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/git-search-aspnetapp.csproj",
+  "expectedPackageFiles": [
+    "/home/ta334/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

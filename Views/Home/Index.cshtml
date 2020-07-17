@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center container" style="height: 500px">
+    <div class="row h-100">
+        <div class="col-sm-12 my-auto">
+            <h1 class="display-4">Github User Search</h1>
+            <p>You can simply type a person's Github username to get information about their profile</p>
+            <form method="POST" asp-action="GetUser">
+                <input id="user" placeholder="Enter a person's username" name="user" />
+            </form>
+        </div>
+    </div>
+</div>

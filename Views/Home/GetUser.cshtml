@@ -1,0 +1,62 @@
+@model GetUserViewModel
+@{
+	ViewData["Title"] = "User Search Result";
+}
+@if (String.IsNullOrEmpty(Model.Error)) {
+	<div class="text-center">
+		<h1 class="display-4">@ViewData["Title"]</h1>
+		<img src="@Model.User["avatar_url"]" height="200" width="200"><br>
+		<a href="@Model.User["html_url"]">
+			<h4>@Model.User["login"] @(Model.User["name"].ToString() != "" ? $"({Model.User["name"]})" : "")<h4>
+		</a>
+		<hr>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<h3 class="followers">Followers</h3>
+				<p>
+					<a href="@Model.User["followers_url"]">@Model.User["followers"]</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Following</h3>
+				<p>
+					<a href="@Model.User["following_url"]">@Model.User["following"]</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Public Repos</h3>
+				<p>
+					<a href="https://github.com/@Model.User["login"]?tab=repositories">@Model.User["public_repos"]</a>
+				</p>
+			</div>
+
+			<div class="col-md-4">
+				<h3>Looking to be hired</h3>
+				<p style="color: orange">
+					@(Model.User["hireable"].ToString() != "" ? "Yes" : "No")
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Bio</h3>
+				<p style="color: orange">
+					@(Model.User["bio"].ToString() != "" ? Model.User["bio"] : "User did not set a bio")
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Company</h3>
+				<p style="color: orange;">
+					@(Model.User["company"].ToString() != "" ? Model.User["company"] : "None")
+				</p>
+			</div>
+		</div>
+	</div>
+}
+else
+{
+		<div class="text-center">
+		<h1 class="display-4">@ViewData["Title"]</h1>
+		<h2>Error</h2><br>
+		<p>@Model.Error<p>
+		<hr>
+	</div>
+}

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using System.IO;
 using Microsoft.Extensions.Logging;
 
 namespace gitsearch_aspnetapp
@@ -13,7 +14,15 @@ namespace gitsearch_aspnetapp
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var config = new ConfigurationBuilder().AddCommandLine(args).Build();
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseConfiguration(config)
+                .UseIISIntegration()
+                .UseStartup<Startup>()
+                .Build();
+                host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

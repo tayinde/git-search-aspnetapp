@@ -20521,11 +20521,6 @@
   "RootNamespace": "weather_aspnetapp",
   "Documents": [
     {
-      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Home/GetUser.cshtml",
-      "TargetPath": "Views\\Home\\GetUser.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20536,8 +20531,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Home/Purpose.cshtml",
-      "TargetPath": "Views\\Home\\Purpose.cshtml",
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Search/Index.cshtml",
+      "TargetPath": "Views\\Search\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20546,18 +20541,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Search/GetUser.cshtml",
+      "TargetPath": "Views\\Search\\GetUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Search/Purpose.cshtml",
+      "TargetPath": "Views\\Search\\Purpose.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],

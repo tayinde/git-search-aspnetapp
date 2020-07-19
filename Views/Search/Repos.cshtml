@@ -1,6 +1,6 @@
 @model ReposViewModel
 @{
-	ViewData["title"] = "Repos";
+	ViewData["title"] = $"{Model.User}'s Repositories";
 }
 @if (Model.Error == null)
 {

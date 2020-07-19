@@ -2,7 +2,7 @@
 @{
 	ViewData["Title"] = "Result";
 }
-@if (String.IsNullOrEmpty(Model.Error)) {
+@if (String.IsNullOrEmpty(Model.Error) == true) {
 	<div class="text-center">
 		<img src="@Model.User["avatar_url"]" height="200" width="200"><br><br>
 		<a href="@Model.User["html_url"]">
@@ -25,13 +25,19 @@
 			<div class="col-md-4">
 				<h4 class="followers">Followers</h4>
 				<p>
-					<a href="https://github.com/@Model.User["login"]?tab=followers">@Model.User["followers"]</a>
+					<form method="POST" asp-action="Followers">
+						<button name="user" id="user" value="@Model.User["login"]">@Model.User["followers"]</button>
+						<input name="avatar" id="avatar" type="hidden" value="@Model.User["avatar_url"]"></input>
+					</form>
 				</p>
 			</div>
 			<div class="col-md-4">
 				<h4>Following</h4>
 				<p>
-					<a href="https://github.com/@Model.User["login"]?tab=following">@Model.User["following"]</a>
+					<form method="POST" asp-action="Following">
+						<button name="user" id="user" value="@Model.User["login"]">@Model.User["following"]</button>
+						<input name="avatar" id="avatar" type="hidden" value="@Model.User["avatar_url"]"></input>
+					</form>
 				</p>
 			</div>
 			<div class="col-md-4">

@@ -24,7 +24,7 @@ namespace gitsearch_aspnetapp.Models
 				HttpResponseMessage Res = await Client.GetAsync(URL.AbsoluteUri);
 				string ResContent = Res.Content.ReadAsStringAsync().Result;
 				JObject UserInfo = JObject.Parse(ResContent);
-				try { return new GetUserViewModel(UserInfo); }
+				try { string test = UserInfo["login"].ToString(); return new GetUserViewModel(UserInfo); }
 				catch { return new GetUserViewModel(UserInfo["message"].ToString(), ((int) Res.StatusCode).ToString()); }
 			}
 			catch

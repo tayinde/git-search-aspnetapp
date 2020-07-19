@@ -20521,6 +20521,11 @@
   "RootNamespace": "weather_aspnetapp",
   "Documents": [
     {
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Search/Followers.cshtml",
+      "TargetPath": "Views\\Search\\Followers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20538,6 +20543,11 @@
     {
       "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Search/Following.cshtml",
+      "TargetPath": "Views\\Search\\Following.cshtml",
       "FileKind": "mvc"
     },
     {

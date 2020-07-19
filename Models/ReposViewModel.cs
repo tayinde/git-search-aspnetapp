@@ -18,7 +18,7 @@ namespace gitsearch_aspnetapp.Models
         {
             try
             {
-                Uri Url = new Uri($"https://api.github.com/users/{user.ToLower().Replace(" ", "")}/repos?per_page=300");
+                Uri Url = new Uri($"https://api.github.com/users/{user.ToLower().Replace(" ", "")}/repos?per_page=700");
                 string Json = JsonConvert.SerializeObject(new object());
                 StringContent Data = new StringContent(Json, Encoding.UTF8, "application/json");
                 HttpClient Client = new HttpClient();

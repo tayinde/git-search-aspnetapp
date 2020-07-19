@@ -1,0 +1,44 @@
+@model FollowersViewModel
+@{
+	ViewData["title"] = $"{Model.User}'s followers";
+}
+@if (Model.Error == null)
+{
+	<div class="text-center">
+		<img src="@Model.Avatar" height="200" width="200"/><br><br>
+		<a href="https://github.com/@Model.User">
+			<h3>@Model.User's followers</h3>
+		</a>
+		<form method="POST" asp-action="GetUser">
+			<button id="user" name="user" value="@Model.User">Go back</button>
+		</form>
+		<br>
+		<hr>
+		@if (Model.Followers.Count != 0)
+		{
+			@foreach (Newtonsoft.Json.Linq.JObject o in Model.Followers)
+			{
+				<div class="row">
+					<div class="col" style="text-align: right;">
+						<img src="@o["avatar_url"]" height="50" width="50">
+					</div>
+					<div class="col" style="text-align: left;">
+						<a href="@o["html_url"]">@o["login"]</a>
+					</div>
+				</div>
+				<hr>
+			}
+		} else
+		{
+			<div>No followers</div>
+		}
+	</div>
+} else
+{
+	<div class="text-center">
+		<h1 class="display-4">@ViewData["Title"]</h1>
+		<br><h1>@Model.StatusCode</h1>
+		<p>@Model.Error<p>
+		<hr>
+	</div>
+}

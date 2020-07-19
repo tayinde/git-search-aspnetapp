@@ -35,6 +35,15 @@ namespace gitsearch_aspnetapp.Controllers
         {
             return View(await GetUserViewModel.GetUserInfo(user));
         }
+        public async Task<ActionResult> Followers(string user, string avatar)
+        {
+            return View(await FollowersViewModel.GetFollowers(user, avatar));
+        }
+        public async Task<ActionResult> Following(string user, string avatar)
+        {
+            return View(await FollowingViewModel.GetFollowers(user, avatar));
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

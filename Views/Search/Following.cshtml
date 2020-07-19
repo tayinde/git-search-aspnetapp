@@ -10,7 +10,7 @@
 			<h3>People @Model.User follows</h3>
 		</a>
 		<form method="POST" asp-action="GetUser">
-			<button id="user" name="user" value="@Model.User">Go back</button>
+			<button id="user" name="user" value="@Model.User">Back to user</button>
 		</form>
 		<br>
 		<hr>
@@ -18,8 +18,10 @@
 		{
 			@foreach (Newtonsoft.Json.Linq.JObject o in Model.Following)
 			{
-				<img src="@o["avatar_url"]" height="50" width="50"><br><br>
-				<a href="@o["html_url"]">@o["login"]</a>
+				<form method="POST" asp-action="GetUser">
+					<img src="@o["avatar_url"]" height="50" width="50"><br><br>
+					<button id="user" name="user" value="@o["login"]">@o["login"]</button>
+				</form>
 				<hr>
 			}
 		} else

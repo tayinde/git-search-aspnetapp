@@ -9,7 +9,7 @@
 			<h3>@Model.User["login"] @(Model.User["name"].ToString() != "" ? $"({Model.User["name"]})" : "")</h3>
 		</a>
 		<form method="POST" asp-action="Index">
-			<button id="user" name="user" value="@Model.User">Go back</button>
+			<button id="user" name="user" value="@Model.User">Back to search</button>
 		</form>
 		<hr>
 		<div class="row text-center">

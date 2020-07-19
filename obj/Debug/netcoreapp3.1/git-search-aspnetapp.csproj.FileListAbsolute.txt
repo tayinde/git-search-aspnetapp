@@ -40,3 +40,4 @@
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Repos.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Followers.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Following.cshtml.g.cs
+/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/_SearchError.cshtml.g.cs

@@ -20536,6 +20536,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/_SearchError.cshtml",
+      "TargetPath": "Views\\_SearchError.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ta334/Codes/C#/git-search-aspnetapp/Views/Search/Index.cshtml",
       "TargetPath": "Views\\Search\\Index.cshtml",
       "FileKind": "mvc"

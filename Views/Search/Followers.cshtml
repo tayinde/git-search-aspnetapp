@@ -33,10 +33,5 @@
 	</div>
 } else
 {
-	<div class="text-center">
-		<h1 class="display-4">@ViewData["Title"]</h1>
-		<br><h1>@Model.StatusCode</h1>
-		<p>@Model.Error<p>
-		<hr>
-	</div>
+	await Html.RenderPartialAsync("../_SearchError.cshtml");
 }

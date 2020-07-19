@@ -8,6 +8,8 @@
 		<a href="@Model.User["html_url"]">
 			<h3>@Model.User["login"] @(Model.User["name"].ToString() != "" ? $"({Model.User["name"]})" : "")</h3>
 		</a>
+		<p style="font-size: 12px;">(last action @Model.User["updated_at"])</p>
+		<br>
 		<form method="POST" asp-action="Index">
 			<button id="user" name="user" value="@Model.User">Back to search</button>
 		</form>

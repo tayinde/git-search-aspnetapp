@@ -37,3 +37,4 @@
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/GetUser.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Index.cshtml.g.cs
 /home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Purpose.cshtml.g.cs
+/home/ta334/Codes/C#/git-search-aspnetapp/obj/Debug/netcoreapp3.1/Razor/Views/Search/Repos.cshtml.g.cs

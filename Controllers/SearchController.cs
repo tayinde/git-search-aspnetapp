@@ -22,7 +22,11 @@ namespace gitsearch_aspnetapp.Controllers
         {
             return View();
         }
-
+        
+        public async Task<IActionResult> Repos(string user, string avatar)
+        {
+            return View(await ReposViewModel.GetRepos(user, avatar));
+        }
         public IActionResult Purpose()
         {
             return View();

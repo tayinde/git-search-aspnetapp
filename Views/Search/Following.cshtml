@@ -18,14 +18,8 @@
 		{
 			@foreach (Newtonsoft.Json.Linq.JObject o in Model.Following)
 			{
-				<div class="row">
-					<div class="col" style="text-align: right;">
-						<img src="@o["avatar_url"]" height="50" width="50">
-					</div>
-					<div class="col" style="text-align: left;">
-						<a href="@o["html_url"]">@o["login"]</a>
-					</div>
-				</div>
+				<img src="@o["avatar_url"]" height="50" width="50"><br><br>
+				<a href="@o["html_url"]">@o["login"]</a>
 				<hr>
 			}
 		} else

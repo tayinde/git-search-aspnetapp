@@ -36,19 +36,19 @@
 			</div>
 			<div class="col-md-4">
 				<h4>Looking to be hired</h4>
-				<p style="color: grey">
+				<p style="color: #050505">
 					@(Model.User["hireable"].ToString() != "" ? "Yes" : "No")
 				</p>
 			</div>
 			<div class="col-md-4">
 				<h4>Bio</h4>
-				<p style="color: grey">
+				<p style="color: #050505">
 					@(Model.User["bio"].ToString() != "" ? Model.User["bio"] : "User did not set a bio")
 				</p>
 			</div>
 			<div class="col-md-4">
 				<h4>Company</h4>
-				<p style="color: grey">
+				<p style="color: #050505">
 					@(Model.User["company"].ToString() != "" ? Model.User["company"] : "None")
 				</p>
 			</div>

@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using System;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
@@ -31,13 +32,10 @@ namespace gitsearch_aspnetapp.Models
             }
             catch
             {
-                return new FollowersViewModel("Not found", "404");
+                return new FollowersViewModel("Not found", StatusCodes.Status404NotFound.ToString());
             }
         }
-        public FollowersViewModel(JArray Followers)
-        {
-            this.Followers = Followers;
-        }
+        public FollowersViewModel(JArray Followers) => this.Followers = Followers;
         public FollowersViewModel(string Error, string StatusCode)
         {
             this.Error = Error;

@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
 using System.Text;
+using Microsoft.AspNetCore.Http;
 
 namespace gitsearch_aspnetapp.Models
 {
@@ -31,7 +32,7 @@ namespace gitsearch_aspnetapp.Models
             }
             catch
             {
-                return new ReposViewModel("Not found", "404");
+                return new ReposViewModel("Not found", StatusCodes.Status404NotFound.ToString());
             }
         }
         public ReposViewModel(JArray Repos)

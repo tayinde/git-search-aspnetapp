@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace gitsearch_aspnetapp.Models
 {
@@ -29,7 +30,7 @@ namespace gitsearch_aspnetapp.Models
 			}
 			catch
 			{
-				return new GetUserViewModel("Not found", "404");
+				return new GetUserViewModel("Not found", StatusCodes.Status404NotFound.ToString());
 			}
 		}	
 		private GetUserViewModel(JObject User)
